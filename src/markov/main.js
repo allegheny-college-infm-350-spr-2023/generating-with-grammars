@@ -1,19 +1,17 @@
-let rita = require('rita');
 let fs = require('fs');
+let rita = require('rita');
+
+const markov = rita.markov(2);
 
 const loadFile = (filename) => {
-    fs.readFile(filename, 'utf8', (err, data) => {
-        if (err) throw err;
-        lines = data.split("\n");
-        lines = lines.map(line => line);
-        markov.addText(lines.join(' '));
-    });
+    let text = fs.readFileSync(filename, 'utf-8');
+    markov.addText(text);
 }
 
 loadFile("data/fish.txt");
 loadFile("data/badger.txt");
-
-let markov = rita.markov(4);
+loadFile("data/jekyll.txt");
 
 sentences = markov.generate(10);
-//console.log(sentences);
+
+console.log(sentences.join(' '))
