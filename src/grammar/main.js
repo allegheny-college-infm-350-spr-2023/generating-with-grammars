@@ -1,9 +1,10 @@
 let rita = require('rita');
 
 let rules = {
-    start: "$subject $verb $subject",
-    subject: "man | dog",
-    verb: "bites | mauls"
+    start: "$observe $name $move",
+    name: "Jane | Jack | Jarvis | Jermaine | Jorgen",
+    move: "trot | run | sauntering",
+    observe: "see | observe | spy"
 }
 
 let grammar = rita.grammar(rules);
