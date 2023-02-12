@@ -45,9 +45,20 @@ Each of these pieces should be discussed in an individual [`reflection.md`](writ
 
 ## Process
 
-This work can be completed locally using `nodeJS`, but can also be achieved using [`p5.js`](https://p5js.org/) for visual elements. If using `p5.js`' online editor, paste your links in the following table:
+This work can be completed locally using `nodeJS`, but can also be achieved using [`p5.js`](https://p5js.org/) for visual elements. \
 
+
+### `p5.js`
+
+If using `p5.js`' online editor, paste your links in the following table:
 
 |Title |Sketch URL|
 |:-----|:---------|
 | |  |
+
+Keep in mind that to use source texts, you'll need to upload assets to the `p5.js` sketch that you're using.
+
+### `nodeJS`
+
+* To install `RiTa`, type: `npm install`
+
