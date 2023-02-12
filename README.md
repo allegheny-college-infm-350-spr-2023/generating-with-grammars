@@ -36,16 +36,20 @@ This assignment asks you to construct and observe the effects of grammars for wh
 
 ## Outcomes
 
-* 2 poems which engage with our new understandings of "grammar":
+This assignment's outcomes are referred to directly as _texts_, as they will look like _prose_ more than anything else. As such, we should
+not consider them the same way that we might something that is more _verse_-like in shape or information.
+
+The above also means that there is a _word count_ on each output of **no fewer than 250 words** per output sample.
+
+* 2 texts which engage with our new understandings of "grammar":
   * 1 which manually constructs a generative grammar
   * 1 which uses a Markov chain to combine no fewer than `2` source texts
 
 Each of these pieces should be discussed in an individual [`reflection.md`](writing/reflection.md) document that explores a few questions relating to _both_ pieces and your own comparison of the two.
 
-
 ## Process
 
-This work can be completed locally using `nodeJS`, but can also be achieved using [`p5.js`](https://p5js.org/) for visual elements. \
+This work can be completed locally using `nodeJS`, but can also be achieved using [`p5.js`](https://p5js.org/) for visual elements. 
 
 
 ### `p5.js`
@@ -62,3 +66,4 @@ Keep in mind that to use source texts, you'll need to upload assets to the `p5.j
 
 * To install `RiTa`, type: `npm install`
 
+Place all output samples in the `writing` folder named for the process (either `grammar` or `markov`) used to generate it.
