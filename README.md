@@ -1,8 +1,9 @@
 # Prompt 4: Generating with Grammars
 
-> "
+> "How can you make a language different so that in the process of learning it, you have to look at the world in a different way."
 >
-> Allison Parrish, "Commonplace: Conversations (with Rachel Zucker)"
+> Allison Parrish, "Interview with Allison Parrish" on [_esoteric.codes_](https://esoteric.codes/blog/interview-with-allison-parrish)
+> )
 
 ## Readings
 
