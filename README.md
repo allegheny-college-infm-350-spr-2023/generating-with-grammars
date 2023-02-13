@@ -1,8 +1,8 @@
 # Prompt 4: Generating with Grammars
 
-> "[M]aterials do not represent, signify or allude to anything; they are what they are and nothing more."
+> "
 >
-> Michael Fried, "Art and Objecthood"
+> Allison Parrish, "Commonplace: Conversations (with Rachel Zucker)"
 
 ## Readings
 
@@ -43,7 +43,9 @@ The above also means that there is a _word count_ on each output of **no fewer t
 
 * 2 texts which engage with our new understandings of "grammar":
   * 1 which manually constructs a generative grammar
+    * This generative grammar must be based on something _other than_ traditional subject-verb agreement 
   * 1 which uses a Markov chain to combine no fewer than `2` source texts
+    * The source texts must have a common thread -- e.g. all science fiction stories or cookbooks
 
 Each of these pieces should be discussed in an individual [`reflection.md`](writing/reflection.md) document that explores a few questions relating to _both_ pieces and your own comparison of the two.
 
