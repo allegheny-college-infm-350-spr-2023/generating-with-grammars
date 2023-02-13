@@ -1,17 +1,34 @@
 let fs = require('fs');
 let rita = require('rita');
 
-const markov = rita.markov(2);
+const markov = rita.markov(3);
 
 const loadFile = (filename) => {
     let text = fs.readFileSync(filename, 'utf-8');
-    markov.addText(text);
+    return text;
 }
 
-loadFile("data/fish.txt");
-loadFile("data/badger.txt");
-loadFile("data/jekyll.txt");
+const loadPhones = (words) => {
+    let phones = [];
+    let phrases = words.split(' ');
+    words = phrases.filter(word => word.trim());
+    for(let word of words){
+        phones.push(rita.phones(word,{silent: true}));
+    }
+    return phones;
+}
 
-sentences = markov.generate(10);
+let words = loadFile("data/shakespeare.txt");
+let phones = loadPhones(words);
 
+let nemes = [];
+for(let phone of phones) {
+    let sounds = phone.split("-");
+    for(let sound of sounds) {
+        nemes.push(sound);
+    }
+}
+
+markov.addText(nemes.join(' '));
+sentences = markov.generate(14);
 console.log(sentences.join(' '))
